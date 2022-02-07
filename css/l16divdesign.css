@@ -1,0 +1,57 @@
+.firstdiv{
+	width: 200px;
+	height: 200px;
+
+	/*background-color: green;*/
+	/*background-color: #45e3e6;*/
+	/*background-color: rgba(211,162,127,1.00);*/
+
+	/*background: green;*/
+	/*background: #45e3e6;*/
+	background: rgba(211,162,127,1.00);
+
+	color: #fff;
+	font-size: 20px;
+}
+
+.seconddiv{
+	width: 300px;
+	height: 300px;
+	background-image: url(../img/bg1.jpg);
+	/*background-repeat: repeat-y;*/
+	/*background-repeat: repeat-x;*/
+	background-repeat:no-repeat ;
+
+	border: 1px solid green;
+	color: white;
+	background-position:center;
+}
+
+/*background img is only for img*/
+/*bgColor is only for color*/
+/*background can do every properties of background*/
+
+.divthree
+{
+	width: 300px;
+	height: 300px;
+	border: 2px solid red;
+
+	/*background: linear-gradient(#f90293,#f02211);*/
+	/*background: linear-gradient(red,#f90293,rgba(214,46,127,1,00));*/
+
+	/*background: radial-gradient(red,orange);*/
+	background: radial-gradient(rgba(214, 46, 127, 1.0),rgba(45, 215, 127, 1.0));
+}
+
+.divfour
+{
+	width: 300px;
+	height: 300px;
+	border: 2px solid green;
+	background-image:linear-gradient(45deg,rgba(227, 26, 127, 0.5),rgba(239, 252, 127, 0.5)) ,url(../img/coverphoto/cat1.jpg);
+	background-repeat: no-repeat;
+	color: black;
+
+	/*background:linear-gradient(-45deg,red,orange,blue) ;*/
+}

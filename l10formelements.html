@@ -1,0 +1,160 @@
+<html>
+<head>
+	<title>Form Elements</title>
+</head>
+<body>
+	<h3>Form Elements</h3>
+
+	<!-- action ဆိုတာ က DataBase File နဲ့ချိတ်ဆက်ဖို့ပါ 
+		method ဆိုတာ protocol(get/push/pull) ထည့်ပေးထားဖို့ပါ 
+	-->
+
+	<!-- &COPY; ကို charref ကနေ ယူလို့ရပါတယ် -->
+
+	<form action="" method="" enctype="multipart/-form-date">
+		<fieldset>
+
+			<legend>That is form simple &COPY;</legend>
+
+		<label for="firstname">First Name</label>
+		<input type="text" name="firstname" id="firstname" class="" autocomplete="off" placeholder="firstname" required autofocus/>
+
+		<br/><br/>
+
+		<label for="lastname">Last Name</label>
+		<input type="text" name="lastname" id="lastname" class="" autocomplete="off" placeholder="lastname"  minlength="3" maxlength="20" />
+
+		<!--minlength အနည်းဆုံး စာလုံးအရေအတွက် သက်မှတ်ဖို့ပါ -->
+		<!--maxlength အများဆုံး စာလုံးအရေအတွက် သက်မှတ်ဖို့ပါ -->
+
+
+		<br/><br/>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" id="email" class="" autocomplete="off" placeholder="email"/>
+
+		<br/><br/>
+
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password" class="" placeholder="password" />
+
+		<br/><br/>
+
+		<label for="age">Age</label>
+		<input type="number" name="age" id="age" class="" placeholder="Please Enter Your age" min="5" max="99">
+
+		<!--min အနည်းဆုံး စာလုံးအရေအတွက် သက်မှတ်ဖို့ပါ -->
+		<!--max အများဆုံး စာလုံးအရေအတွက် သက်မှတ်ဖို့ပါ -->
+
+		<!-- text အတွက်ဆို minlength ပါ Number အတွက်ဆို min ပါပဲ -->
+
+		<br/><br/>
+
+		<label>Gender</label>
+		<input type="radio" name="gender" id="genderm" class="" value="male" checked /><label for="genderm">Male</label>
+		<input type="radio" name="gender" id="genderf" class="" value="female" /><label for="genderf">Female</label>
+		<input type="radio" name="gender" id="gendero" class="" value="other" /><label for="gendero">Other</label>
+
+		<br/><br/>
+
+		<label>Fruit</label>
+		<input type="radio" name="fruit" id="genderap" class="" value="apple" checked /><label for="genderap">Apple</label>
+		<input type="radio" name="fruit" id="genderor" class="" value="orange" /><label for="genderor">Orange</label>
+		<input type="radio" name="fruit" id="genderpi" class="" value="pineapple" /><label for="genderpi">Pineapple</label>
+
+		<br><br>
+
+		<label>Choose your fav color</label>
+
+		<input type="checkbox" name="color" id="colorrd" class="" value="red" checked>
+		<label for="colorrd">Red</label>
+
+		<input type="checkbox" name="color" id="colorbk" class="" value="Black" checked>
+		<label for="colorbk">Black</label>
+
+		<input type="checkbox" name="color" id="colorbe" class="" value="Blue">
+		<label for="colorbe">Blue</label>
+
+		<input type="checkbox" name="color" id="colorgn" class="" value="Green" checked>
+		<label for="colorgn">Green</label>
+
+		<br><br>
+		<label for="country">Citizen</label>
+		<select name="country" id="Country">
+			<option selected disabled>Choose Country</option>
+			<option value="mm">Myanmar</option>
+			<option value="indo">Indonesia</option>
+			<option value="thi">Thailand</option>
+			<option value="slk">Srilanka</option>
+			<option value="php">Philipine</option>
+		</select>
+
+		<br><br>
+		<label for="country">Role</label>
+		<select name="country" id="Country" class="" multiple>
+			<option value="1">Manger</option>
+			<option value="2">Supervisor</option>
+			<option value="3">Editor</option>
+			<option value="4">Sales</option>
+		</select>
+
+		<br><br>
+
+		<label for="dob">DOB</label>
+		<input type="date" name="dob" id="dob" class="">
+
+		<br><br>
+
+		<label X>Time</label>
+		<input type="time" name="timeBooking" id="timeBooking" class="">
+
+		<br><br>
+
+		<label for="apt">Appoint</label>
+		<input type="datetime-local" name="apt" id="apt" class="">
+
+		<br><br>
+
+		<label for="volume">Volume</label>
+		<input type="range" name="volume" id="volume" class="" value="0" min="0" max="100" step="20">
+
+		<br><br>
+
+		<label for="bio">Bio</label>
+		<textarea name="bio" id="bio" class="" rows="10" placeholder="Write Something..."></textarea>
+
+		<br><br>
+		<label for="nrc">NRC</label>
+		<input type="file" capture="user" accept="image/*" name="nrc" id="nrc" class="" multiple>
+
+		<br><br>
+		<label for="nrc">Record Video</label>
+		<input type="file" capture="enviroment" accept="video/*" name="nrc" id="nrc" class="" multiple>
+
+
+		<br><br>
+
+		<input type="hidden" name="test" id="text" class="" value="">
+
+		<br><br>
+
+		<input type="reset" name="reset" id="reset" class="" value="cancle">
+
+		<input type="submit" name="reset" id="reset" class="" value="login">
+
+		<button type="submit" name="login" id="login">Login</button>
+
+		</fieldset>
+	</form>
+
+	</body>
+</html>
+
+
+<!-- stand alone attribute -->
+
+<!-- DataBase မှာ Storage နည်းစေဖို့ Value တွေကို အတိုကောက်ထည့်ပေးလိုက်ပြီ Storage ရှေ့ပေးနိုင်ပါတယ် -->
+
+<!-- readonly က Disable လိုပဲ ဒါပေမဲ့ အရောင်မမှုန်သွားပါဘူး -->
+
+<!-- enctype ကတော့ DataBase ထည်းကိုပုံထည့်ပေးလို့ရအောင်လုပ်လိုက်တာပါ -->

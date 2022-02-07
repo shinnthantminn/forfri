@@ -1,0 +1,43 @@
+/*1.local font Integrate*/
+
+
+/*body
+{
+	font-family: Arial;
+}*/
+
+/*.p1,.p2
+{
+	font-family: "times new roman";
+}
+*/
+/*2.Global font Integrate*/
+
+/*.p1
+{
+	font-family: 'Stick';
+}*/
+
+/*.p2
+{
+	font-family: 'Stick', sans-serif;
+}*/
+
+/*.p3
+{
+	font-family: 'Akaya Kanadaka', cursive;
+/}*/
+
+/*local font Integrate*/
+
+/*at-rules*/
+
+@font-face{
+	font-family: Stick;
+	src :local('Stick-Regular'),url("../lib/font/Stick/Stick-Regular.ttf") format('woff');
+}
+
+body
+{
+	font-family: Stick;
+}

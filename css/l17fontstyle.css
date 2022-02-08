@@ -32,12 +32,88 @@
 
 /*at-rules*/
 
+/*for stick*/
 @font-face{
 	font-family: Stick;
 	src :local('Stick-Regular'),url("../lib/font/Stick/Stick-Regular.ttf") format('woff');
 }
 
-body
+/*for akaya*/
+@font-face
+{
+	font-family: 'Akaya Kanadaka';
+	src: local('AkayaKanadaka-Regular'), url('../lib/font/akayakanadaka/AkayaKanadaka-Regular.ttf') format('woff');
+}
+
+/*body
 {
 	font-family: Stick;
+}*/
+
+.p1
+{
+	font-family: Stick;
+}
+
+.p2,.p3
+{
+ font-family: Akaya Kanadaka;
+}
+
+.p4
+{
+	font-family: Arial;
+	/*font-weight: bold;*/
+	/*font-weight: bolder;*/
+	/*font-weight: 600;100 to 900*/
+	/*font-style: italic;*/
+	/*text-transform: uppercase;*/
+	/*text-transform: lowercase;*/
+	text-transform: capitalize;
+
+	/*text indentation Space from front of paragraph*/
+	text-indent: 50px;
+}
+
+.clickme
+{
+	text-decoration: none;
+	color: red;
+}
+
+.clickme:visited
+{
+	color: green;
+}
+
+.clickme:hover
+{
+	color: black;
+	font-size: 20px;
+}
+
+.menutext
+{
+	font-family: Arial;
+	text-decoration: none;
+	background-color: green;
+	color: #fff;
+	/*padding: 20px;*/
+
+	/*padding: 0 30px;top down left right /*top right bottom left*/
+
+	/*padding: 10px 20px 30px 40px;*/
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	border-radius: 10px;
+}
+
+.menutext:hover
+{
+	background-color: orange;
+	color: black;
 }
